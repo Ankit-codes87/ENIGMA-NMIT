@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Abel', sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  background: url('back4.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: rgba(0, 0, 0, 0.6); 
+}
+
+.navbar .logo img {
+  height: 55px;
+  width: 55px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .nav-links li {
+  list-style: none;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #ff9800;
+}
+
+.hero-content {
+  z-index: 1;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.title {
+  font-size: 12rem;
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #ff9800;
+}
+
+.subtitle {
+  font-family: 'Roboto Condensed', sans-serif; 
+  font-weight: 550;
+  font-size: 3rem;
+  color: #fff; 
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    gap: 1rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+.abtimage {
+  position: absolute; 
+  top: 20px;
+  right: 150px;
+  width: 300px;
+  height: 140px;
+  border: 5px solid black;
+}
+
+.about-us {
+  position: relative;
+  padding: 5rem 2rem;
+  background: #fff;
+  color: #333;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.about-us .container {
+  max-width: 100%;    
+  width: 100%;
+  padding: 2rem;
+}
+
+.about-heading {
+  font-size: 3rem;
+  font-family: 'Abel', sans-serif;
+  margin-bottom: 2rem;
+  color: #ff9800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-quote {
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.about-quote footer {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+.about-body {
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #333; 
+  margin-bottom: 1.5rem;
+}
+
+/* Events Section */
+.evtimage {
+  position: absolute;
+  top: 20px;
+  right: 150px;    
+  width: 300px;
+  height: 160px;    
+  border: 5px solid black;
+}
+
+.events-section {
+  position: relative;
+  padding: 5rem 2rem;
+  background-color: #000;
+  color: #fff;  
+  text-align: center;
+}
+
+.events-heading {
+  font-size: 3rem;
+  font-family: 'Abel', sans-serif;
+  margin-bottom: 2rem;
+  color: #ff9800; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.events-column {
+  padding: 2rem;
+  width: 33%;  
+  vertical-align: top;
+}
+
+.event-subheading {
+  font-size: 2.2rem;
+  font-family: 'Abel', sans-serif;
+  margin-bottom: 1rem;
+  color: #ff5722;
+  text-transform: uppercase;
+}
+
+.event-quote {
+  font-size: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.event-quote footer {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.event-body {
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.gallery-section {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery-heading {
+  font-size: 3rem;
+  font-family: 'Abel', sans-serif;
+  margin-bottom: 2rem;
+  color: #ff9800; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.gallery-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.gallery-table td {
+  padding: 10px;
+}
+
+.gallery-image {
+  width: 350px;             
+  height: 230px;            
+  border: 5px solid black;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.contact-section {
+  background-color: #181818; 
+  color: #e0e0e0;            
+  padding: 60px 20px;       
+  text-align: center;
+}
+
+.contact-heading {
+  font-family: 'Abel', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: inline-block;
+  text-align: left;
+  max-width: 500px;
+  width: 100%;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #fff;
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #333;
+  color: #e0e0e0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #444;
+}
+
+.social-links {
+  margin-top: 30px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 1.2rem;
+}
+
+.social-links a:hover {
+  color: #f0f0f0;
+}
+
+.footer-section {
+  background-color: #fff;
+  color: #0e0707; 
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-image {
+  width: 100px;
+  height: 70PX;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-image {
+    width: 120px;
+  }
+
+  .footer-text {
+    font-size: 1rem; 
+  }
+}
+
+
+
